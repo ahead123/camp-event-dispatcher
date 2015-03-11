@@ -1,5 +1,9 @@
+var handler;
+var payload;
+
 function EventDispatcher() {
 };
+
 
 /* on(eventType, handerFunction)
  * Registers a handerFunction that will be called
@@ -14,7 +18,10 @@ function EventDispatcher() {
  * changeColor = function(color){ document.body.style.color = color;}
  * dispatcher.on('highlight', changeColor)
  */
+
 EventDispatcher.prototype.on = function(eventType, handler) {
+	eventType = new handler() 
+
   /* Implement Me! */
 };
 
@@ -30,6 +37,8 @@ EventDispatcher.prototype.on = function(eventType, handler) {
  */
 EventDispatcher.prototype.trigger = function(eventType, payload) {
   /* Implement Me! */
+  function handler(eventType) {};
+
 };
 
 
